@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    
+}
+body{
+    padding-top: 80px;
+    padding-left: 98px;
+    background-color: rgb(248, 248, 248);
+    padding-bottom: 250px;
+}
+
+p{
+    font-family: Roboto,Arial;
+    margin: 0;
+
+
+}
+
+.tb1
+{
+    
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+.time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 18px;
+    right: 5px;
+    font-weight: 500;
+    padding: 4px ;
+    border-radius: 4px;
+  
+
+}
+.imaging{
+   margin-bottom: 12px;
+    position: relative;
+}
+
+.author{
+display: inline-block;
+}
+
+
+
+   
+
+
+.title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight:500;
+    line-height: 20px;
+    margin-bottom: 12px;
+
+}
+
+.info{
+    margin-left: 8px;
+}
+.profile{
+    width: 36px;
+    border-radius: 25px;
+   
+
+   
+}
+.author,.view{
+    font-size: 12px;
+    color: rgb(96,96,96);
+    
+    
+}
+.author{
+    margin-bottom: 3px;
+}
+.container-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+@media(max-width:750px){
+    .main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:751px)and(max-width:999px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media(min-width:1000){
+    .main{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+}
+.nav{
+height: 56px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: white;
+border-bottom-width:1px;
+border-bottom-style: solid;
+border-bottom-color: antiquewhite;
+z-index: 100;
+
+}
+.left{
+  
+   
+    display: flex;
+    align-items: center
+}
+.centre{
+  
+    flex: 1;
+    margin: 0 35px 0 70px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+
+}
+.right{
+    
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+    
+}
+.upload{
+    height: 24px;
+}
+.apps{
+    height: 24px;
+}
+.notifications{
+    height: 24px;
+
+}
+.my{
+    height: 32px;
+}
+.hamburger-menu{
+    height: 24px;
+    margin: 0 24px;
+}
+.youtube-logo{
+height: 20px;
+}
+.button{
+    height: 40px;
+    width: 66px;
+    background-color: rgb(240,240,240);
+    border-width: 1px;
+  
+    border-style: solid;
+    margin-left: -1px;
+    margin-right: 10px;
+    border-color:rgba(192,192,192); margin-left: -1px;
+}
+.voice-button{
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(245,245,245);
+}
+.search-bar{
+    flex: 1;
+    height: 33px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(192,192,192);
+    border-radius:2px ;
+    box-shadow: inset  1px 2px 3px rgba(0,0, 0, 0.05);
+width:0;
+}
+.search-bar::placeholder{
+    font-family: Arial;
+    font-size: 16px;
+}
+.icon-search{
+    height: 25px;
+    margin-top: 4px;
+}
+.sidebar{
+    background-color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+
+}
+.noti{
+position: relative;
+}
+.count{
+position: absolute;
+top: -2px;
+right: -5px;
+background-color: red;
+color: white;
+font-size: 8px;
+padding: 2px 6px; 
+border-radius: 10px;
+}
+.sidebar-link{
+   
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.sidebar-link:hover{
+    background-color: rgb(243, 233, 233);
+}
+ .sidebar-link img{
+    margin-bottom: 5px;
+    height: 28px;
+
+    
+}
+.sidebar-link div{
+    font-size: 11px;
+    font-weight: bold;
+
+}
+.button .tool,.voice-button .tool{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    white-space:nowrap;
+    
+}
+.button  :hover.tool,.voice-button :hover.tool{
+    opacity: 5;
+}
+.button,.voice-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
